@@ -1,16 +1,10 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@font-face {
-    font-family: 'Gonzaga Trial';
-    font-style: normal;
-    font-weight: normal;
-    src: url('/font/Gonzaga-Trial-Regular.ttf') format('truetype');
-}
 
 
 body {
-    font-family: 'Gonzaga Trial';
+    font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -24,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Gonzaga Trial;
+    font-family: "Inter", sans-serif;
 }
 .top-search{
     width: 95%;
