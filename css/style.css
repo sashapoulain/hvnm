@@ -666,7 +666,7 @@ body {
 
 .product-image .owl-dots {
     position: absolute;
-    bottom: 10%;
+    bottom: 1%;
     left: 50%;
     transform: translateX(-50%);
     margin: 7px 0;
