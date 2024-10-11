@@ -202,9 +202,11 @@ body {
 .offcanvas-body {
     padding: 0;
 }
-.offcanvas-body .offcanvas-menu .list{
+
+.offcanvas-body .offcanvas-menu .list {
     padding-left: 20px;
 }
+
 .offcanvas-body .offcanvas-menu .list li {
     list-style: none;
     margin: 10px 0;
@@ -218,16 +220,17 @@ body {
     color: black;
     font-size: 16px;
     display: inline-block;
-    transition: all 0.3s ease;  }
+    transition: all 0.3s ease;
+}
 
 
 .offcanvas-body .offcanvas-menu .list li a:hover {
-    color: #000; 
+    color: #000;
     transform: scale(1.1);
 }
 
 
-.offcanvas-body .offcanvas-menu .list li img  {
+.offcanvas-body .offcanvas-menu .list li img {
     vertical-align: middle;
     margin-right: 10px;
     width: 19px;
@@ -364,10 +367,15 @@ body {
     border-radius: 4px;
     overflow: hidden;
 }
-.middle .card img{ transition: all 0.3s ease; }
-.middle .card img:hover {
-    transform: scale(1.05); 
+
+.middle .card img {
+    transition: all 0.3s ease;
 }
+
+.middle .card img:hover {
+    transform: scale(1.05);
+}
+
 .middle .card .card-body {
     position: absolute;
     right: 5px;
@@ -396,6 +404,13 @@ body {
 .line-container {
     display: flex;
     align-items: center;
+}
+
+.line-container.short {
+    display: flex;
+    align-items: center;
+    width: 1500px;
+    margin: auto;
 }
 
 .line {
