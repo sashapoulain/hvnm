@@ -27,7 +27,7 @@ body {
 }
 
 .tik-tok-icon img:hover {
-    transform: rotate(-15deg);
+    transform: rotate(-15deg) scale(1.2);;
 }
 
 .instagram-icon img {
@@ -35,7 +35,7 @@ body {
 }
 
 .instagram-icon img:hover {
-    transform: rotate(15deg); /* Sağa eğim */
+    transform: rotate(15deg) scale(1.2);; /* Sağa eğim */
 }
 .old-price {
     position: relative;
