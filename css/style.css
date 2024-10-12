@@ -878,7 +878,7 @@ body {
 }
 
 .soldout-detail .btn-noticeme {
-    width: 100%;
+    width: 70%;
     display: block;
     background-color: #000005;
     color: white;
@@ -939,13 +939,6 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .line-container.short {
-        display: flex;
-        align-items: center;
-        width: 600px;
-        margin: auto;
     }
 
 

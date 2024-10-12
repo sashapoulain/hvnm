@@ -2,3 +2,6 @@ mobil
 footer
 renk seçimi
 duyuru varsa aktif yoksa pasif kalsın
+
+
+sss en üstte kalan hep aktif

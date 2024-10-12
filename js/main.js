@@ -13,6 +13,7 @@ $('.global-carousel').each(function () {
         autoplayTimeout: $(this).attr('data-timeout'),
         autoWidth: eval($(this).attr('data-autowidth')),
         autoHeight: eval($(this).attr('data-autoheight')),
+        stagePadding: eval($(this).attr('data-stage-padding')),
         responsive: {
             0: {
                 items: 1,
