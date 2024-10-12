@@ -334,14 +334,17 @@ body {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
 .middle .middle-filter1 {
     float: left;
+    margin-bottom: 2rem;
 }
 
 .middle .middle-filter2 {
     float: right;
+    margin-bottom: 2rem;
 }
 
 .middle .middle-filter1 .dropdown-toggle::after {
@@ -805,7 +808,7 @@ body {
 }
 
 .product-detail-content .straight-price {
-    font-size: 1.25rem;
+    font-size: 3.25rem;
     margin: auto 0px;
     font-weight: 800;
 
@@ -1019,7 +1022,9 @@ body {
 @media screen and (max-device-width:600px) {
 
     .middle .middle-filter2 .dropdown-toggle {
-        white-space: wrap !important;
+        /* white-space: wrap !important; */
+        white-space: nowrap;
+        font-size: 0.6rem !important;
     }
 
     .offcanvas-bottom .off-bottom-img {
@@ -1065,6 +1070,18 @@ body {
     .product-detail-content {
         margin-left: 0rem;
     }
-
+    .middle .middle-title {
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .middle .middle-filter1 {
+        margin-bottom: 1rem;
+    }
+    
+    .middle .middle-filter2 {
+        margin-bottom: 1rem;
+    }
+    
 
 }
