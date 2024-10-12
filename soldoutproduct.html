@@ -1,421 +1,587 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/css/perfect-scrollbar.css" integrity="sha512-2xznCEl5y5T5huJ2hCmwhvVtIGVF1j/aNUEJwi/BzpWPKEzsZPGpwnP1JrIMmjPpQaVicWOYVu8QvAIg9hwv9w==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/css/perfect-scrollbar.css"
+            integrity="sha512-2xznCEl5y5T5huJ2hCmwhvVtIGVF1j/aNUEJwi/BzpWPKEzsZPGpwnP1JrIMmjPpQaVicWOYVu8QvAIg9hwv9w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.0/sweetalert2.min.css" integrity="sha512-WxRv0maH8aN6vNOcgNFlimjOhKp+CUqqNougXbz0E+D24gP5i+7W/gcc5tenxVmr28rH85XHF5eXehpV2TQhRg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+            integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+            integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.0/sweetalert2.min.css"
+            integrity="sha512-WxRv0maH8aN6vNOcgNFlimjOhKp+CUqqNougXbz0E+D24gP5i+7W/gcc5tenxVmr28rH85XHF5eXehpV2TQhRg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="shortcut icon" href="images/custom/black-hivenomicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/custom/black-hivenomicon.png"
+            type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
 
-    <title>HIVENOM</title>
-</head>
+        <title>HIVENOM</title>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Modal -->
-    <div class="modal fade" id="noticeModal" tabindex="-1" aria-labelledby="noticeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered custom-modal-position">
-            <div class="modal-content">
-                <div class="row g-0">
+        <!-- Modal -->
+        <div class="modal fade" id="noticeModal" tabindex="-1"
+            aria-labelledby="noticeModalLabel" aria-hidden="true">
+            <div
+                class="modal-dialog modal-lg modal-dialog-centered custom-modal-position">
+                <div class="modal-content">
+                    <div class="row g-0">
 
-                    <div class="col-md-12 col-xl-6">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="noticeModalLabel">Stok güncellendiğinde sana ulaşabilmemiz için iletişim bilgilerini gir:</h5>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">E-POSTA:</label>
-                                    <input type="email" class="form-control">
-                                </div>
-                                <p>veya</p>
-                                <div class="mb-3">
-                                    <label for="phone" class="form-label">Telefon numarası</label>
-                                    <input type="tel" class="form-control">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                            <div class="d-flex mb-4">
-                                <img src="images/secure.png" class="secure img-fluid" alt=""> <span>Endişe etme, bilgilerin 6698 sayılı kişisel verilerin korunması kanunu kapsamında güvence altındadır.</span>
+                        <div class="col-md-12 col-xl-6">
+                            <div class="modal-header">
+                                <h5 class="modal-title"
+                                    id="noticeModalLabel">Stok güncellendiğinde
+                                    sana ulaşabilmemiz için iletişim bilgilerini
+                                    gir:</h5>
                             </div>
-                            <button type="submit" class="btn btn-noticeme"><img src="images/noticephone.png" alt=""> gelince haber ver</button>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-xl-6 position-relative sm-d-none">
-                        <img src="images/dh.png" alt="Modal Image" class="img-fluid dead-heart">
-                        <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- logo -->
-    <div class="announcement text-center">
-        <p>"Announcement text"</p>
-    </div>
-    <div class="sticky-top">
-
-        <div class="top-bar">
-            <!-- left-bar -->
-            <div class="left-bar">
-                <a class="btn btn-bar" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                    <img src="images/menu-bar.png" alt="">
-                </a>
-
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                        <div class="logo">
-                            <a href="index.html"><img src="images/custom/black-hivenomlogo.png" class="img-fluid" alt=""></a>
-                        </div>
-                        <button type="button" class="btn close-offcanvas" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-chevron-left"></i></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="offcanvas-menu">
-                            <ul class="list">
-                                <li>
-                                    <img src="images/home.png" alt="">  <a href="index.html"> Anasayfa</a>
-                                </li>
-                                <li>
-                                    <img src="images/flame.png" alt=""> <a href="comingfromyou.html"> sizden gelenler</a>
-                                </li>
-                                <li>
-                                    <img src="images/conversation.png" alt=""> <a href="faq.html"> s.s.s</a>
-                                </li>
-                                <li>
-                                    <img src="images/phone-call.png" alt=""> <a href="https://wa.me/905323334455?text=Merhaba"> bize ulaşın</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="offcanvas-bottom">
-                            <div class="off-bottom-img">
-                                <img src="images/vsp.png" class="img-fluid" alt="">
-                            </div>
-                            <div class="social-link">
-                                <div class="social-text mb-2"> <a>Bizi takip edin!</a></div>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#"><img src="images/tik-tok.png" alt=""></a>
-                                    <a href="#"><img src="images/instagram.png" alt=""></a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- left-bar end -->
-
-            <div class="logo">
-                <a href="index.html"><img src="images/custom/black-hivenomlogo.png" class="img-fluid" alt=""></a>
-            </div>
-            <!-- logo end -->
-
-            <!-- right-bar -->
-            <div class="right-bar">
-                <!-- search box -->
-
-                <button type="button" class="btn search-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-
-                <div class="offcanvas offcanvas-top offcanvas-top-search" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="d-flex">
-                            <div class="offcanvas-top-logo">
-                                <div class="logo">
-                                    <a href="index.html"><img src="images/custom/black-hivenomlogo.png" class="img-fluid" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="top-search">
-                                <form action="#" class="d-lg-inline-block">
-                                    <input type="text" placeholder="Aramak istediğiniz bir kelime yazın...">
-                                    <button type="button">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email"
+                                            class="form-label">E-POSTA:</label>
+                                        <input type="email"
+                                            class="form-control">
+                                    </div>
+                                    <p>veya</p>
+                                    <div class="mb-3">
+                                        <label for="phone"
+                                            class="form-label">Telefon
+                                            numarası</label>
+                                        <input type="tel" class="form-control">
+                                    </div>
                                 </form>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- searchbox end -->
-
-
-                <a href="#" class="basket">
-                    <img src="images/shop-bag.png" alt="">
-                    <span class="badge text-bg-dark">9</span>
-                </a>
-            </div>
-
-            <!--right-bar end-->
-        </div>
-        <!-- top-bar end -->
-    </div>
-
-
-
-
-
-    <div class="container-fluid product-detail soldout-detail">
-        <div class="row">
-            <div class="col-xl-3 position-relative">
-                <div class="badge-wrapper">
-                    <div class="badge badge-style1">%10</div>
-                </div>
-                <div class="badge-wrapper2">
-                    <div class="badge badge-style3">son 5 ürün!</div>
-                </div>
-
-                <div class="product-image soldout-image">
-
-                    <div class="owl-carousel owl-themes global-carousel" data-dots="true" data-loop="true" data-margin="0" data-nav="false" data-autoplay="true" data-timeout="3000" data-slide-sm="1" data-slide-md="1" data-slide="1">
-                        <div class="item">
-                            <a href="images/basketpro.webp" data-fancybox="gallery" data-caption="#">
-                                <img src="images/basketpro.webp" class="img-fluid pro-detail" alt="">
-                            </a>
-
-                        </div>
-                        <div class="item">
-                            <a href="images/basketpro.webp" data-fancybox="gallery" data-caption="#">
-                                <img src="images/basketpro.webp" class="img-fluid" alt="">
-                            </a>
-
-                        </div>
-                        <div class="item">
-                            <a href="images/basketpro.webp" data-fancybox="gallery" data-caption="#">
-                                <img src="images/basketpro.webp" class="img-fluid" alt="">
-                            </a>
-
-                        </div>
-                        <div class="item">
-                            <a href="images/basketpro.webp" data-fancybox="gallery" data-caption="#">
-                                <img src="images/basketpro.webp" class="img-fluid" alt="">
-                            </a>
-
-                        </div>
-                        <div class="item">
-                            <a href="images/basketpro.webp" data-fancybox="gallery" data-caption="#">
-                                <img src="images/basketpro.webp" class="img-fluid" alt="">
-                            </a>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4">
-                <div class="product-detail-content mt-4">
-                    <div class="header">
-                        <h2 class="mb-4">deadpool mıknatıslı maske</h2>
-                    </div>
-                    <div class="detail-images d-flex mb-4">
-                        <a href="images/basketpro.webp" data-fancybox="gallery" data-caption="#">
-                            <img src="images/basketpro.webp" class="pro-detail active" alt="">
-                        </a>
-                        <a href="images/a3.png" data-fancybox="gallery" data-caption="#">
-                            <img src="images/a3.png" class="pro-detail" alt="">
-                        </a>
-                        <a href="images/a2.png" data-fancybox="gallery" data-caption="#">
-                            <img src="images/a2.png" class="pro-detail" alt="">
-                        </a>
-                    </div>
-                    <div class="check-btns soldout-check-btns">
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                            <label class="form-check-label" for="flexCheckDefault">Stand Ekle <span>(+ ₺200)</span></label>
-                        </div>
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                            <label class="form-check-label" for="flexCheckDefault2">Hediye kutusu ekle <span>(+ ₺99,99)</span></label>
-                        </div>
-
-                    </div>
-                    <div class="price mb-3">
-                        <h5 class="mb-3 price-line">₺ 799,99</h5>
-                        <h3 class="mb-3 straight-price">₺ 599,99</h3>
-                    </div>
-                    <div>
-                        <button type="submit" class="btn btn-noticeme"><img src="images/noticephone.png" alt=""> gelince haber ver</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-5">
-
-                <div class="about-product">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAboutProduct" aria-expanded="false" aria-controls="flush-collapseAboutProduct">Ürün hakkında</button>
-                            </h2>
-                            <div id="flush-collapseAboutProduct" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vel, dignissimos praesentium quidem nesciunt reprehenderit nam quo libero aliquid? Consequuntur ad omnis fuga dolorem possimus facere autem alias a harum.
+                            <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                <div class="d-flex mb-4">
+                                    <img src="images/secure.png"
+                                        class="secure img-fluid" alt>
+                                    <span>Endişe etme, bilgilerin 6698 sayılı
+                                        kişisel verilerin korunması kanunu
+                                        kapsamında güvence altındadır.</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAboutReturn" aria-expanded="false" aria-controls="flush-collapseAboutReturn">teslimat & iade</button>
-                            </h2>
-                            <div id="flush-collapseAboutReturn" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <ul>
-                                        <li>1000₺ ve üzeri alışverişlerinizde kargo ücretsizdir.</li>
-                                        <li>10:00 ' a kadar verilen siparişler aynı gün kargoya teslim edilir.</li>
-                                        <li>Siparişinizi verdiğiniz andan kargo size teslim edilene kadar her aşamada mail ve SMS yoluyla bilgilendirilirsiniz.</li>
-                                        <li>Ödemenizi banka/kredi kartıyla veya havale/EFT yoluyla gerçekleştirebilirsiniz.</li>
-                                    </ul>
-                                </div>
+                                <button type="submit"
+                                    class="btn btn-noticeme"><img
+                                        src="images/noticephone.png" alt>
+                                    gelince haber ver</button>
                             </div>
                         </div>
 
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-12 text-center mb-3 mt-3">
-                <div class="line-container">
-                    <div class="line"></div>
-                    <a href="#" class="more">Benzer Ürünler</a>
-                    <div class="line"></div>
-                </div>
-            </div>
-
-        </div>
-        <div class="row similar-products">
-            <div class="owl-carousel owl-themes global-carousel" data-dots="true" data-loop="true" data-margin="30" data-nav="false" data-autoplay="true" data-timeout="3000" data-slide-sm="1" data-slide-md="3" data-slide="5">
-                <div class="item">
-                    <img src="images/a2.png" class="img-fluid" alt="">
-                </div>
-                <div class="item">
-                    <img src="images/a4.png" class="img-fluid" alt="">
-                </div>
-                <div class="item">
-                    <img src="images/a3.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="images/a2.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="images/a4.png" alt="">
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-    <!-- footer top -->
-    <div class="footer">
-        <div class="container-fluid text-center">
-            <div class="row justify-content-center">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-5 mb-4">
-                    <div class="card border-0">
-                        <div class="row justify-content-end">
-                            <div class="col-md-3"><img src="images/delivery-car.png" class="card-img-top" alt="..."></div>
-                            <div class="col-md-7" style="margin: 0;">
-                                <div class="card-body">
-                                    <h3 class="card-title">Hızlı Kargo</h3>
-                                    <h5 class="card-title">10:00' a kadar verilen siparişler aynı gün kargoda!</h5>
-                                </div>
-                            </div>
+                        <div
+                            class="col-md-6 col-xl-6 position-relative sm-d-none">
+                            <img src="images/dh.png" alt="Modal Image"
+                                class="img-fluid dead-heart">
+                            <button type="button"
+                                class="btn-close position-absolute top-0 end-0 m-2"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-5 mb-4">
-                    <div class="card border-0">
-                        <div class="row justify-content-end">
-                            <div class="col-md-3">
-                                <img src="images/call-center.png" alt="">
-                            </div>
-                            <div class="col-md-7" style="margin: 0;">
-                                <div class="card-body">
-                                    <h3 class="card-title">müşteri desteği</h3>
-                                    <h5 class="card-title">7/24 whatsapp hattı</h5>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-5 mb-4">
-                    <div class="card border-0">
-                        <div class="row justify-content-end">
-                            <div class="col-md-3"><img src="images/return-box.png" class="card-img-top" alt="..."></div>
-                            <div class="col-md-7" style="margin: 0;">
-                                <div class="card-body">
-                                    <h3 class="card-title">koşulsuz İade</h3>
-                                    <h5 class="card-title">satış sonrası şartsız iade imkanı</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-5 mb-4">
-                    <div class="card border-0">
-                        <div class="row justify-content-end">
-                            <div class="col-md-3">
-                                <img src="images/ssl-certificate.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="col-md-7" style="margin: 0;">
-                                <div class="card-body">
-                                    <h3 class="card-title">güvenli alışveriş</h3>
-                                    <h5 class="card-title">256 bit ssl & 3d secure</h5>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- footer end -->
 
+        <!-- logo -->
+        <div class="announcement text-center">
+            <p>"Announcement text"</p>
+        </div>
+        <div class="sticky-top">
 
-    <a href="#" class="copy mt-4 mb-3">2024© şeyma yılmaz ALL RIGHTS RESERVED</a>
+            <div class="top-bar">
+                <!-- left-bar -->
+                <div class="left-bar">
+                    <a class="btn btn-bar" data-bs-toggle="offcanvas"
+                        href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <img src="images/menu-bar.png" alt>
+                    </a>
 
+                    <div class="offcanvas offcanvas-start" tabindex="-1"
+                        id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <div class="logo">
+                                <a href="index.html"><img
+                                        src="images/custom/black-hivenomlogo.png"
+                                        class="img-fluid" alt></a>
+                            </div>
+                            <button type="button" class="btn close-offcanvas"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"><i
+                                    class="fa-solid fa-chevron-left"></i></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="offcanvas-menu">
+                                <ul class="list">
+                                    <li>
+                                        <img src="images/home.png" alt> <a
+                                            href="index.html"> Anasayfa</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/flame.png" alt> <a
+                                            href="comingfromyou.html"> sizden
+                                            gelenler</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/conversation.png" alt>
+                                        <a href="faq.html"> s.s.s</a>
+                                    </li>
+                                    <li>
+                                        <img src="images/phone-call.png" alt> <a
+                                            href="https://wa.me/905323334455?text=Merhaba">
+                                            bize ulaşın</a>
+                                    </li>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js " integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js " integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/perfect-scrollbar.min.js" integrity="sha512-X41/A5OSxoi5uqtS6Krhqz8QyyD8E/ZbN7B4IaBSgqPLRbWVuXJXr9UwOujstj71SoVxh5vxgy7kmtd17xrJRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.0/sweetalert2.min.js" integrity="sha512-OlF0YFB8FRtvtNaGojDXbPT7LgcsSB3hj0IZKaVjzFix+BReDmTWhntaXBup8qwwoHrTHvwTxhLeoUqrYY9SEw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/main.js"></script>
-</body>
+                                </ul>
+                            </div>
+                            <div class="offcanvas-bottom">
+                                <div class="off-bottom-img">
+                                    <img src="images/vsp.png" class="img-fluid"
+                                        alt>
+                                </div>
+                                <div class="social-link">
+                                    <div class="social-text mb-2"> <a>Bizi takip
+                                            edin!</a></div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#"><img
+                                                src="images/tik-tok.png"
+                                                alt></a>
+                                        <a href="#"><img
+                                                src="images/instagram.png"
+                                                alt></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- left-bar end -->
+
+                <div class="logo">
+                    <a href="index.html"><img
+                            src="images/custom/black-hivenomlogo.png"
+                            class="img-fluid" alt></a>
+                </div>
+                <!-- logo end -->
+
+                <!-- right-bar -->
+                <div class="right-bar">
+                    <!-- search box -->
+
+                    <button type="button" class="btn search-icon"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-top offcanvas-top-search"
+                        tabindex="-1" id="offcanvasTop"
+                        aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="d-flex">
+                                <div class="offcanvas-top-logo">
+                                    <div class="logo">
+                                        <a href="index.html"><img
+                                                src="images/custom/black-hivenomlogo.png"
+                                                class="img-fluid" alt></a>
+                                    </div>
+                                </div>
+                                <div class="top-search">
+                                    <form action="#" class="d-lg-inline-block">
+                                        <input type="text"
+                                            placeholder="Aramak istediğiniz bir kelime yazın...">
+                                        <button type="button">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- searchbox end -->
+
+                    <a href="#" class="basket">
+                        <img src="images/shop-bag.png" alt>
+                        <span class="badge text-bg-dark">9</span>
+                    </a>
+                </div>
+
+                <!--right-bar end-->
+            </div>
+            <!-- top-bar end -->
+        </div>
+
+        <div class="container-fluid product-detail soldout-detail">
+            <div class="row">
+                <div class="col-xl-3 position-relative">
+                    <div class="badge-wrapper">
+                        <div class="badge badge-style1">%10</div>
+                    </div>
+                    <div class="badge-wrapper2">
+                        <div class="badge badge-style3">son 5 ürün!</div>
+                    </div>
+
+                    <div class="product-image soldout-image">
+
+                        <div class="owl-carousel owl-themes global-carousel"
+                            data-dots="true" data-loop="true" data-margin="0"
+                            data-nav="false" data-autoplay="true"
+                            data-timeout="3000" data-slide-sm="1"
+                            data-slide-md="1" data-slide="1">
+                            <div class="item">
+                                <a href="images/basketpro.webp"
+                                    data-fancybox="gallery" data-caption="#">
+                                    <img src="images/basketpro.webp"
+                                        class="img-fluid pro-detail" alt>
+                                </a>
+
+                            </div>
+                            <div class="item">
+                                <a href="images/basketpro.webp"
+                                    data-fancybox="gallery" data-caption="#">
+                                    <img src="images/basketpro.webp"
+                                        class="img-fluid" alt>
+                                </a>
+
+                            </div>
+                            <div class="item">
+                                <a href="images/basketpro.webp"
+                                    data-fancybox="gallery" data-caption="#">
+                                    <img src="images/basketpro.webp"
+                                        class="img-fluid" alt>
+                                </a>
+
+                            </div>
+                            <div class="item">
+                                <a href="images/basketpro.webp"
+                                    data-fancybox="gallery" data-caption="#">
+                                    <img src="images/basketpro.webp"
+                                        class="img-fluid" alt>
+                                </a>
+
+                            </div>
+                            <div class="item">
+                                <a href="images/basketpro.webp"
+                                    data-fancybox="gallery" data-caption="#">
+                                    <img src="images/basketpro.webp"
+                                        class="img-fluid" alt>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="product-detail-content mt-4">
+                        <div class="header">
+                            <h2 class="mb-4">deadpool mıknatıslı maske</h2>
+                        </div>
+                        <div class="detail-images d-flex mb-4">
+                            <a href="images/basketpro.webp"
+                                data-fancybox="gallery" data-caption="#">
+                                <img src="images/basketpro.webp"
+                                    class="pro-detail active" alt>
+                            </a>
+                            <a href="images/a3.png" data-fancybox="gallery"
+                                data-caption="#">
+                                <img src="images/a3.png" class="pro-detail" alt>
+                            </a>
+                            <a href="images/a2.png" data-fancybox="gallery"
+                                data-caption="#">
+                                <img src="images/a2.png" class="pro-detail" alt>
+                            </a>
+                        </div>
+                        <div class="check-btns soldout-check-btns">
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox"
+                                    value id="flexCheckDefault" checked>
+                                <label class="form-check-label"
+                                    for="flexCheckDefault">Stand Ekle <span>(+
+                                        ₺200)</span></label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox"
+                                    value id="flexCheckDefault2">
+                                <label class="form-check-label"
+                                    for="flexCheckDefault2">Hediye kutusu ekle
+                                    <span>(+ ₺99,99)</span></label>
+                            </div>
+
+                        </div>
+                        <div class="price mb-3">
+                            <div>
+                                <span class="old-price mb-2">₺ 799,99
+                                    <span class="overline"></span>
+                                </span>
+    
+                            </div>
+                            <div>
+                                <span class="current-price" style="font-size: 2.5rem;">₺ 599,99</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-noticeme"><img
+                                    src="images/noticephone.png" alt> gelince
+                                haber ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+
+                    <div class="about-product">
+                        <div class="accordion accordion-flush"
+                            id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseAboutProduct"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseAboutProduct">Ürün
+                                        hakkında</button>
+                                </h2>
+                                <div id="flush-collapseAboutProduct"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Doloremque vel,
+                                        dignissimos praesentium quidem nesciunt
+                                        reprehenderit nam quo libero aliquid?
+                                        Consequuntur ad omnis fuga dolorem
+                                        possimus facere autem alias a harum.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseAboutReturn"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseAboutReturn">teslimat
+                                        & iade</button>
+                                </h2>
+                                <div id="flush-collapseAboutReturn"
+                                    class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>1000₺ ve üzeri
+                                                alışverişlerinizde kargo
+                                                ücretsizdir.</li>
+                                            <li>10:00 ' a kadar verilen
+                                                siparişler aynı gün kargoya
+                                                teslim edilir.</li>
+                                            <li>Siparişinizi verdiğiniz andan
+                                                kargo size teslim edilene kadar
+                                                her aşamada mail ve SMS yoluyla
+                                                bilgilendirilirsiniz.</li>
+                                            <li>Ödemenizi banka/kredi kartıyla
+                                                veya havale/EFT yoluyla
+                                                gerçekleştirebilirsiniz.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 text-center mb-3 mt-3">
+                    <div class="line-container">
+                        <div class="line"></div>
+                        <a href="#" class="more">Benzer Ürünler</a>
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row similar-products">
+                <div class="owl-carousel owl-themes global-carousel"
+                    data-dots="true" data-loop="true" data-margin="30"
+                    data-nav="false" data-autoplay="true" data-timeout="3000"
+                    data-slide-sm="1" data-slide-md="3" data-slide="5">
+                    <div class="item">
+                        <img src="images/a2.png" class="img-fluid" alt>
+                    </div>
+                    <div class="item">
+                        <img src="images/a4.png" class="img-fluid" alt>
+                    </div>
+                    <div class="item">
+                        <img src="images/a3.png" alt>
+                    </div>
+                    <div class="item">
+                        <img src="images/a2.png" alt>
+                    </div>
+                    <div class="item">
+                        <img src="images/a4.png" alt>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer top -->
+        <div class="footer">
+            <div class="container-fluid text-center">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-5 mb-4">
+                        <div class="card border-0">
+                            <div class="row justify-content-end">
+                                <div class="col-md-3"><img
+                                        src="images/delivery-car.png"
+                                        class="card-img-top" alt="..."></div>
+                                <div class="col-md-7" style="margin: 0;">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Hızlı Kargo</h3>
+                                        <h5 class="card-title">10:00' a kadar
+                                            verilen siparişler aynı gün
+                                            kargoda!</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-5 mb-4">
+                        <div class="card border-0">
+                            <div class="row justify-content-end">
+                                <div class="col-md-3">
+                                    <img src="images/call-center.png" alt>
+                                </div>
+                                <div class="col-md-7" style="margin: 0;">
+                                    <div class="card-body">
+                                        <h3 class="card-title">müşteri
+                                            desteği</h3>
+                                        <h5 class="card-title">7/24 whatsapp
+                                            hattı</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-5 mb-4">
+                        <div class="card border-0">
+                            <div class="row justify-content-end">
+                                <div class="col-md-3"><img
+                                        src="images/return-box.png"
+                                        class="card-img-top" alt="..."></div>
+                                <div class="col-md-7" style="margin: 0;">
+                                    <div class="card-body">
+                                        <h3 class="card-title">koşulsuz
+                                            İade</h3>
+                                        <h5 class="card-title">satış sonrası
+                                            şartsız iade imkanı</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-5 mb-4">
+                        <div class="card border-0">
+                            <div class="row justify-content-end">
+                                <div class="col-md-3">
+                                    <img src="images/ssl-certificate.png"
+                                        class="card-img-top" alt="...">
+                                </div>
+                                <div class="col-md-7" style="margin: 0;">
+                                    <div class="card-body">
+                                        <h3 class="card-title">güvenli
+                                            alışveriş</h3>
+                                        <h5 class="card-title">256 bit ssl & 3d
+                                            secure</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer end -->
+
+        <a href="#" class="copy mt-4 mb-3">2024© şeyma yılmaz ALL RIGHTS
+            RESERVED</a>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js "
+            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+            crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js "
+            integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+            crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/perfect-scrollbar.min.js"
+            integrity="sha512-X41/A5OSxoi5uqtS6Krhqz8QyyD8E/ZbN7B4IaBSgqPLRbWVuXJXr9UwOujstj71SoVxh5vxgy7kmtd17xrJRw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+            integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+            integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.0/sweetalert2.min.js"
+            integrity="sha512-OlF0YFB8FRtvtNaGojDXbPT7LgcsSB3hj0IZKaVjzFix+BReDmTWhntaXBup8qwwoHrTHvwTxhLeoUqrYY9SEw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/main.js"></script>
+    </body>
 
 </html>
