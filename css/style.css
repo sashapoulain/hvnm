@@ -21,6 +21,22 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+
+.tik-tok-icon img {
+    transition: transform 0.3s ease;
+}
+
+.tik-tok-icon img:hover {
+    transform: rotate(-15deg);
+}
+
+.instagram-icon img {
+    transition: transform 0.3s ease;
+}
+
+.instagram-icon img:hover {
+    transform: rotate(15deg); /* Sağa eğim */
+}
 .old-price {
     position: relative;
     display: inline-block;
