@@ -1085,5 +1085,7 @@ body {
         margin-bottom: 1rem;
     }
     
-
+    .middle .card {
+        padding: 0rem;
+    }
 }
