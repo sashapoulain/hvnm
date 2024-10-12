@@ -630,7 +630,7 @@ body {
     position: absolute;
     top: 35%;
     left: 0;
-    width: 100%;
+    width: 0%;
     height: 4px;
     background-color: #861c20;
     transform: rotate(-10deg);
