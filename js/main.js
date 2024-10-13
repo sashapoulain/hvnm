@@ -1,3 +1,7 @@
+
+
+
+
 $('.global-carousel').each(function () {
     $(this).owlCarousel({
         nav: eval($(this).data('nav')),
@@ -20,9 +24,11 @@ $('.global-carousel').each(function () {
             },
             400: {
                 items: $(this).data('slide-sm'),
+                stagePadding: 20,
             },
             600: {
                 items: $(this).data('slide-md'),
+                stagePadding: 20,
             },
             1000: {
                 items: $(this).data('slide')
@@ -40,6 +46,14 @@ $('.global-carousel').each(function () {
 
 });
 
+// var owlCarouselActive = document.querySelectorAll('.owl-carousel.similar .owl-item.active');
+// if (owlCarouselActive.length > 0) {
+//     var first = owlCarouselActive[0]; 
+
+//     first.style.opacity = 0.4; 
+// }
+
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -49,8 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
     myModal.hide();
 });
 
-$(document).ready(function() {
-    $('.decrease').click(function() {
+$(document).ready(function () {
+    $('.decrease').click(function () {
         let input = $(this).siblings('.quantity');
         let currentValue = parseInt(input.val());
         if (currentValue > 1) {
@@ -58,7 +72,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.increase').click(function() {
+    $('.increase').click(function () {
         let input = $(this).siblings('.quantity');
         let currentValue = parseInt(input.val());
         input.val(currentValue + 1);

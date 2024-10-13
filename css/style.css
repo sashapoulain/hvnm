@@ -21,15 +21,22 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-.paddingx{
+
+.btn-list {
+    font-size: 1.5rem;
+}
+
+.paddingx {
     padding: 0 4rem;
 }
+
 .tik-tok-icon img {
     transition: transform 0.3s ease;
 }
 
 .tik-tok-icon img:hover {
-    transform: rotate(-15deg) scale(1.2);;
+    transform: rotate(-15deg) scale(1.2);
+    ;
 }
 
 .instagram-icon img {
@@ -37,8 +44,11 @@ body {
 }
 
 .instagram-icon img:hover {
-    transform: rotate(15deg) scale(1.2);; /* Sağa eğim */
+    transform: rotate(15deg) scale(1.2);
+    ;
+    /* Sağa eğim */
 }
+
 .old-price {
     position: relative;
     display: inline-block;
@@ -73,6 +83,10 @@ body {
 .top-search {
     width: 95%;
     margin: auto 10px;
+}
+
+.offcanvas.offcanvas-top-search {
+    max-height: 150px;
 }
 
 .offcanvas-top-search form {
@@ -267,7 +281,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-size: 16px;
+    font-size: 22px;
     display: inline-block;
     transition: all 0.3s ease;
 }
@@ -932,9 +946,10 @@ body {
 
 /* Desktop */
 @media (min-width: 769px) {
-    .paddingx{
+    .paddingx {
         padding: 0 2rem;
     }
+
     .basket-product .card-body {
         display: flex;
         justify-content: space-between;
@@ -953,9 +968,10 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    .paddingx{
+    .paddingx {
         padding: 0 2rem;
     }
+
     .basket-product .card-body {
         flex-direction: column;
         text-align: center;
@@ -1021,16 +1037,25 @@ body {
 
 
 @media screen and (max-device-width:600px) {
-    .paddingx{
-        padding: 0 1rem;
+    .btn-list {
+        font-size: 1rem;
     }
-    .more{font-size: 1rem;}
+
+    .paddingx {
+        padding: 0 2rem;
+    }
+
+    .more {
+        font-size: 1rem;
+    }
+
     .line-container.short {
         display: flex;
         align-items: center;
         width: 350px;
         margin: auto;
     }
+
     .wallet {
         flex-direction: column;
     }
@@ -1101,4 +1126,14 @@ body {
     .middle .card {
         padding: 0rem;
     }
+    .footer .card img {
+        width: 50px;
+    }
+    .footer .card .card-body h3{
+        font-size: 1rem;
+    } 
+     .footer .card .card-body h5{
+        font-size: 0.8rem;
+    }
+
 }
