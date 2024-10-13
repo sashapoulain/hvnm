@@ -1135,5 +1135,21 @@ body {
      .footer .card .card-body h5{
         font-size: 0.8rem;
     }
+    .modal-title {
+        font-size: 1rem;
+        text-align: left;
+        font-weight: 500;
+        padding: 0 8px;
+        margin-bottom: 1rem;
+    }
+    .offcanvas-body .offcanvas-menu .list li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-size: 16px;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+    
 
 }

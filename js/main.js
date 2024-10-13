@@ -46,22 +46,14 @@ $('.global-carousel').each(function () {
 
 });
 
-// var owlCarouselActive = document.querySelectorAll('.owl-carousel.similar .owl-item.active');
-// if (owlCarouselActive.length > 0) {
-//     var first = owlCarouselActive[0]; 
-
-//     first.style.opacity = 0.4; 
-// }
-
-
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var myModal = new bootstrap.Modal(document.getElementById('noticeModal'), {
-        backdrop: true
-    });
-    if(myModal){
-        myModal.show();
+    if (document.getElementById('noticeModal')) {
+        var myModal = new bootstrap.Modal(document.getElementById('noticeModal'), {
+            backdrop: true
+        });
+        myModal.show(); // Modalı göster
     }
 });
 
