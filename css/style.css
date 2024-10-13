@@ -1093,6 +1093,7 @@ body {
 
     .my-basket .card img {
         width: 100%;
+        height: 150px;
     }
 
     .detail-images .pro-detail {
@@ -1150,6 +1151,37 @@ body {
         display: inline-block;
         transition: all 0.3s ease;
     }
-    
-
+    .basket-product .card-body {
+        flex-direction: column;
+        text-align: left;
+    }
+    .basket-product .card-body {
+        align-items: baseline;
+        padding: 0 10px      ;
+    }
+    .basket-product .col-md-11 {
+        margin-top: 0px;
+    }
+    .my-basket .basket-product .card-title {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .my-basket .btn-ig{
+        padding: 3px;
+    }
+    .quantity-container{
+        margin-bottom: 5px !important;
+        text-align: left;
+        justify-content: start !important;
+    }
+    .quantity-container .form-control{
+        width: 40px;
+    }
+    .old-price{
+        margin-bottom: 3px !important;
+        font-size: 0.9rem;
+    }
+    .current-price{
+        font-size: 1.1rem;
+    }
 }
