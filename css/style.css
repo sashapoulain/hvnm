@@ -947,7 +947,7 @@ body {
 /* Desktop */
 @media (min-width: 769px) {
     .paddingx {
-        padding: 0 2rem;
+        padding: 0 5rem;
     }
 
     .basket-product .card-body {

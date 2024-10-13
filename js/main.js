@@ -60,7 +60,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var myModal = new bootstrap.Modal(document.getElementById('noticeModal'), {
         backdrop: true
     });
-    myModal.hide();
+    if(myModal){
+        myModal.show();
+    }
 });
 
 $(document).ready(function () {
