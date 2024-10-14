@@ -48,15 +48,26 @@ $('.global-carousel').each(function () {
 
 
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     if (document.getElementById('noticeModal')) {
+//         var myModal = new bootstrap.Modal(document.getElementById('noticeModal'), {
+//             backdrop: true
+//         });
+//         myModal.show(); // Modalı göster
+//     }
+// });
 document.addEventListener('DOMContentLoaded', function () {
-    if (document.getElementById('noticeModal')) {
+    if (!localStorage.getItem('modalShown')) {
+      if (document.getElementById('noticeModal')) {
         var myModal = new bootstrap.Modal(document.getElementById('noticeModal'), {
-            backdrop: true
+          backdrop: true
         });
-        myModal.show(); // Modalı göster
+        myModal.show(); 
+        
+        localStorage.setItem('modalShown', 'true');
+      }
     }
-});
-
+  });
 $(document).ready(function () {
     $('.decrease').click(function () {
         let input = $(this).siblings('.quantity');
