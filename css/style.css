@@ -218,7 +218,7 @@ body {
     display: flex;
     background-color: white;
     justify-content: space-between;
-    margin: 0 15px;
+    padding: 0 15px;
 }
 
 .left-bar {
@@ -1070,6 +1070,7 @@ body {
     .price {
         transition: all 0.5s ease;
         margin-top: 1.5rem;
+        margin-left: 2rem;
     }
     .btn-list {
         font-size: 1rem;
