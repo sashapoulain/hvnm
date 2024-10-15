@@ -122,65 +122,70 @@ $('.global-carousel').each(function () {
 
 /*price timeline*/
 
-$(document).ready(function () {
-    $('.decrease').click(function () {
-        let input = $(this).siblings('.quantity');
-        let currentValue = parseInt(input.val());
-        if (currentValue > 1) {
-            input.val(currentValue - 1);
-        }
-    });
+// document.addEventListener('DOMContentLoaded', () => {
+//     $('.decrease').click(function () {
+//         let input = $(this).siblings('.quantity');
+//         let currentValue = parseInt(input.val());
+//         if (currentValue > 1) {
+//             input.val(currentValue - 1);
+//             updatePrice(); 
+//         }
+//     });
 
-    $('.increase').click(function () {
-        let input = $(this).siblings('.quantity');
-        let currentValue = parseInt(input.val());
-        input.val(currentValue + 1);
-    });
-});
+//     $('.increase').click(function () {
+//         let input = $(this).siblings('.quantity');
+//         let currentValue = parseInt(input.val());
+//         input.val(currentValue + 1);
+//         updatePrice(); 
+//     });
+// });
+document.addEventListener('DOMContentLoaded', () => {
+    const basePriceElement = document.getElementById('totalPrice');
+    
+    if (!basePriceElement) {
+        return; 
+    }
 
-const basePriceElement = document.getElementById('totalPrice');
-let basePrice = parseFloat(basePriceElement.innerText.replace(',', '.'));
-let totalPrice = basePrice;
+    let basePrice = parseFloat(basePriceElement.innerText.replace('₺ ', '').replace('.', '').replace(',', '.'));
+    let totalPrice = basePrice;
 
-const checkboxes = document.querySelectorAll('.form-check-input');
-const totalPriceElement = document.getElementById('totalPrice');
+    const checkboxes = document.querySelectorAll('.form-check-input');
+    const totalPriceElement = document.getElementById('totalPrice');
 
-const updatePrice = () => {
-    totalPrice = basePrice;
+    const updatePrice = () => {
+        totalPrice = basePrice;
 
-    checkboxes.forEach(checkbox => {
-        if (checkbox.checked) {
-            totalPrice += parseFloat(checkbox.value);
-        }
-    });
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                totalPrice += parseFloat(checkbox.value);
+            }
+        });
 
-    animatePriceChange(totalPrice);
-};
-
-const animatePriceChange = (newPrice) => {
-    const duration = 1000;
-    const startPrice = parseFloat(totalPriceElement.innerText.replace(',', '.'));
-    const endPrice = newPrice;
-    const startTime = performance.now();
-
-    const animate = (currentTime) => {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-
-        const currentPrice = startPrice + (endPrice - startPrice) * progress;
-        totalPriceElement.innerText = currentPrice.toFixed(2).replace('.', ','); 
-
-        if (progress < 1) {
-            requestAnimationFrame(animate);
-        }
+        animatePriceChange(totalPrice);
     };
 
-    requestAnimationFrame(animate);
-};
+    const animatePriceChange = (newPrice) => {
+        const duration = 1000; 
+        const startPrice = parseFloat(totalPriceElement.innerText.replace('₺ ', '').replace('.', '').replace(',', '.'));
+        const endPrice = newPrice;
+        const startTime = performance.now();
 
-checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('change', updatePrice);
+        const animate = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            const currentPrice = startPrice + (endPrice - startPrice) * progress;
+            totalPriceElement.innerText = currentPrice.toFixed(2).replace('.', ','); 
+
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            }
+        };
+
+        requestAnimationFrame(animate);
+    };
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updatePrice);
+    });
 });
-
-
-/*price timeline*/

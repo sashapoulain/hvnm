@@ -22,6 +22,7 @@ body {
 }
 .price {
     transition: all 0.5s ease;
+    margin-top: 4.5rem;
 }
 
 .owl-prev,
@@ -1066,6 +1067,10 @@ body {
 
 
 @media screen and (max-device-width:600px) {
+    .price {
+        transition: all 0.5s ease;
+        margin-top: 1.5rem;
+    }
     .btn-list {
         font-size: 1rem;
     }
