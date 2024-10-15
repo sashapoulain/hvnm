@@ -20,6 +20,9 @@ body {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+.price {
+    transition: all 0.5s ease;
+}
 
 .owl-prev,
 .owl-next {
@@ -693,6 +696,7 @@ body {
 .my-basket .quantity-container .form-control {
     border: 1px solid transparent;
     font-size: 1.15rem;
+    width: 70px;
 }
 
 
@@ -703,6 +707,10 @@ body {
     left: -10px;
     cursor: pointer;
     font-size: 1.5rem;
+}
+.close-product .close-img{
+    width: 25px !important;
+    height: 25px !important;
 }
 
 .total {
@@ -1063,7 +1071,7 @@ body {
     }
 
     .paddingx {
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 
     .more {

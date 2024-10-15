@@ -11,3 +11,6 @@ arama barında yazdıkça yazılan karakterlerle ilişkili ürünlerin öneriler
 
 
 ürün görüntüleme sayfasında opsiyonel seçenekler seçildiğinde yeni oluşan fiyatın animasyonlu bir şekilde gözükmesini rica edeceğim sepete eklemeden önce
+
+
+spiderman maskesi stoğu bitti ve bir kullanıcı bana haber ver seçeneğini seçti biz o kullanıcının hangi üründen istek belirttiğini bir yerde görebilelim iletişim bilgileri ile beraber

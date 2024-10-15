@@ -33,8 +33,8 @@ $('.global-carousel').each(function () {
             }
         },
         navText: [
-            '<i class="fa-solid fa-arrow-left-long"></i>',  
-            '<i class="fa-solid fa-arrow-right-long"></i>'  
+            '<i class="fa-solid fa-arrow-left-long"></i>',
+            '<i class="fa-solid fa-arrow-right-long"></i>'
         ]
     });
     // $('.owl-carousel__next').click(() =>
@@ -59,6 +59,69 @@ $('.global-carousel').each(function () {
 //     }
 // });
 
+// $(document).ready(function () {
+//     $('.decrease').click(function () {
+//         let input = $(this).siblings('.quantity');
+//         let currentValue = parseInt(input.val());
+//         if (currentValue > 1) {
+//             input.val(currentValue - 1);
+//         }
+//     });
+
+//     $('.increase').click(function () {
+//         let input = $(this).siblings('.quantity');
+//         let currentValue = parseInt(input.val());
+//         input.val(currentValue + 1);
+//     });
+// });
+
+// const checkboxes = document.querySelectorAll('.form-check-input');
+// const totalPriceElement = document.getElementById('totalPrice');
+// let basePrice = 599.99;
+// let totalPrice = basePrice;
+
+// const updatePrice = () => {
+//     totalPrice = basePrice;
+
+//     checkboxes.forEach(checkbox => {
+//         if (checkbox.checked) {
+//             totalPrice += parseFloat(checkbox.value);
+//         }
+//     });
+
+//     animatePriceChange(totalPrice);
+// };
+
+// const animatePriceChange = (newPrice) => {
+//     const duration = 1000;
+//     const startPrice = parseFloat(totalPriceElement.innerText);
+//     const endPrice = newPrice;
+//     const startTime = performance.now();
+
+//     const animate = (currentTime) => {
+//         const elapsed = currentTime - startTime;
+//         const progress = Math.min(elapsed / duration, 1);
+
+//         const currentPrice = startPrice + (endPrice - startPrice) * progress;
+//         totalPriceElement.innerText = currentPrice.toFixed(2);
+
+//         if (progress < 1) {
+//             requestAnimationFrame(animate);
+//         }
+//     };
+
+//     requestAnimationFrame(animate);
+// };
+
+// checkboxes.forEach(checkbox => {
+//     checkbox.addEventListener('change', updatePrice);
+// });
+
+
+
+
+/*price timeline*/
+
 $(document).ready(function () {
     $('.decrease').click(function () {
         let input = $(this).siblings('.quantity');
@@ -75,3 +138,49 @@ $(document).ready(function () {
     });
 });
 
+const basePriceElement = document.getElementById('totalPrice');
+let basePrice = parseFloat(basePriceElement.innerText.replace(',', '.'));
+let totalPrice = basePrice;
+
+const checkboxes = document.querySelectorAll('.form-check-input');
+const totalPriceElement = document.getElementById('totalPrice');
+
+const updatePrice = () => {
+    totalPrice = basePrice;
+
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            totalPrice += parseFloat(checkbox.value);
+        }
+    });
+
+    animatePriceChange(totalPrice);
+};
+
+const animatePriceChange = (newPrice) => {
+    const duration = 1000;
+    const startPrice = parseFloat(totalPriceElement.innerText.replace(',', '.'));
+    const endPrice = newPrice;
+    const startTime = performance.now();
+
+    const animate = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        const currentPrice = startPrice + (endPrice - startPrice) * progress;
+        totalPriceElement.innerText = currentPrice.toFixed(2).replace('.', ','); 
+
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        }
+    };
+
+    requestAnimationFrame(animate);
+};
+
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', updatePrice);
+});
+
+
+/*price timeline*/
