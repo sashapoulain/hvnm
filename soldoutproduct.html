@@ -49,8 +49,6 @@
 
     <body>
 
-  
-
         <!-- logo -->
         <div class="announcement text-center">
             <p>"Announcement text"</p>
@@ -113,8 +111,12 @@
                                     <div class="social-text mb-2"> <a>Bizi takip
                                             edin!</a></div>
                                     <div class="d-flex justify-content-center">
-                                        <a href="#" class="tik-tok-icon"><img src="images/tik-tok.png" alt=""></a>
-                                    <a href="#" class="instagram-icon"><img src="images/instagram.png" alt=""></a>
+                                        <a href="#" class="tik-tok-icon"><img
+                                                src="images/tik-tok.png"
+                                                alt></a>
+                                        <a href="#" class="instagram-icon"><img
+                                                src="images/instagram.png"
+                                                alt></a>
                                     </div>
 
                                 </div>
@@ -269,7 +271,7 @@
                         <div class="check-btns soldout-check-btns">
                             <div class="form-check mb-3">
                                 <input class="form-check-input" type="checkbox"
-                                    value id="flexCheckDefault" >
+                                    value id="flexCheckDefault">
                                 <label class="form-check-label"
                                     for="flexCheckDefault">Stand Ekle <span>(+
                                         ₺200)</span></label>
@@ -288,17 +290,97 @@
                                 <span class="old-price mb-2">₺ 799,99
                                     <span class="overline"></span>
                                 </span>
-    
+
                             </div>
                             <div>
-                                <span class="current-price" style="font-size: 2.5rem;">₺ 599,99</span>
+                                <span class="current-price"
+                                    style="font-size: 2.5rem;">₺ 599,99</span>
                             </div>
 
                         </div>
                         <div>
-                            <button type="submit" class="btn btn-noticeme"><img
+                            <button type="button" class="btn btn-noticeme"
+                                data-bs-toggle="modal"
+                                data-bs-target="#noticeModal"><img
                                     src="images/noticephone.png" alt> gelince
                                 haber ver</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="noticeModal"
+                                tabindex="-1" aria-labelledby="noticeModalLabel"
+                                aria-hidden="true">
+                                <div
+                                    class="modal-dialog modal-lg modal-dialog-centered custom-modal-position">
+                                    <div class="modal-content">
+                                        <div class="row g-0">
+
+                                            <div class="col-md-12 col-xl-6">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title"
+                                                        id="noticeModalLabel">Stok
+                                                        güncellendiğinde sana
+                                                        ulaşabilmemiz için
+                                                        iletişim bilgilerini
+                                                        gir:</h5>
+                                                    <button type="button"
+                                                        class="btn-close d-lg-none top-0 end-0 m-2"
+                                                        data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="email"
+                                                                class="form-label">E-POSTA:</label>
+                                                            <input type="email"
+                                                                class="form-control">
+                                                        </div>
+                                                        <p>veya</p>
+                                                        <div class="mb-3">
+                                                            <label for="phone"
+                                                                class="form-label">Telefon
+                                                                numarası</label>
+                                                            <input type="tel"
+                                                                class="form-control">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                                    <div class="d-flex mb-4">
+                                                        <img
+                                                            src="images/secure.png"
+                                                            class="secure img-fluid"
+                                                            alt> <span>Endişe
+                                                            etme, bilgilerin
+                                                            6698 sayılı kişisel
+                                                            verilerin korunması
+                                                            kanunu kapsamında
+                                                            güvence
+                                                            altındadır.</span>
+                                                    </div>
+                                                    <button type="submit"
+                                                        class="btn btn-noticeme noticeme2"><img
+                                                            src="images/noticephone.png"
+                                                            alt> gelince haber
+                                                        ver</button>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="col-md-6 col-xl-6 position-relative sm-d-none">
+                                                <img src="images/dh.png"
+                                                    alt="Modal Image"
+                                                    class="img-fluid dead-heart">
+                                                <button type="button"
+                                                    class="btn-close position-absolute top-0 end-0 m-2"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -378,8 +460,8 @@
             </div>
             <div class="row similar-products justify-content-center">
                 <div class="col-xl-11">
-                    <div class="owl-carousel owl-themes global-carousel" data-stage-padding="200" data-animate-out="fadeOut" 
-                    data-animate-in="fadeIn" data-dots="true" data-loop="true" data-margin="50" data-nav="false" data-autoplay="false" data-timeout="7000" data-slide-sm="1" data-slide-md="3" data-slide="4" >
+                    <div class="owl-carousel owl-themes global-carousel similar"  data-animate-out="fadeOut" 
+                    data-animate-in="fadeIn" data-dots="true" data-loop="true" data-margin="50" data-nav="true" data-autoplay="false" data-timeout="7000" data-slide-sm="2" data-slide-md="3" data-slide="5" >
                         <div class="item">
                             <img src="images/a2.png" class="img-fluid" alt="">
                         </div>
@@ -395,10 +477,13 @@
                         <div class="item">
                             <img src="images/a4.png" alt="">
                         </div>
+                        <div class="item">
+                            <img src="images/a4.png" alt="">
+                        </div>
                     </div>
-        
+
                 </div>
-                
+
             </div>
         </div>
 

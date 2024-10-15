@@ -1,7 +1,5 @@
 
 
-
-
 $('.global-carousel').each(function () {
     $(this).owlCarousel({
         nav: eval($(this).data('nav')),
@@ -33,16 +31,20 @@ $('.global-carousel').each(function () {
             1000: {
                 items: $(this).data('slide')
             }
-        }
+        },
+        navText: [
+            '<i class="fa-solid fa-arrow-left-long"></i>',  
+            '<i class="fa-solid fa-arrow-right-long"></i>'  
+        ]
     });
-    $('.owl-carousel__next').click(() =>
-        $(this).trigger('next.owl.carousel')
-    );
+    // $('.owl-carousel__next').click(() =>
+    //     $(this).trigger('next.owl.carousel')
+    // );
 
 
-    $('.owl-carousel__prev').click(() =>
-        $(this).trigger('prev.owl.carousel')
-    );
+    // $('.owl-carousel__prev').click(() =>
+    //     $(this).trigger('prev.owl.carousel')
+    // );
 
 });
 
@@ -56,18 +58,7 @@ $('.global-carousel').each(function () {
 //         myModal.show(); // Modalı göster
 //     }
 // });
-document.addEventListener('DOMContentLoaded', function () {
-    if (!localStorage.getItem('modalShown')) {
-      if (document.getElementById('noticeModal')) {
-        var myModal = new bootstrap.Modal(document.getElementById('noticeModal'), {
-          backdrop: true
-        });
-        myModal.show(); 
-        
-        localStorage.setItem('modalShown', 'true');
-      }
-    }
-  });
+
 $(document).ready(function () {
     $('.decrease').click(function () {
         let input = $(this).siblings('.quantity');

@@ -5,3 +5,9 @@ duyuru varsa aktif yoksa pasif kalsın
 
 
 sss en üstte kalan hep aktif
+
+
+arama barında yazdıkça yazılan karakterlerle ilişkili ürünlerin önerilerinin çıkmasını rica edeceğim
+
+
+ürün görüntüleme sayfasında opsiyonel seçenekler seçildiğinde yeni oluşan fiyatın animasyonlu bir şekilde gözükmesini rica edeceğim sepete eklemeden önce

@@ -21,6 +21,27 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.owl-prev {
+    left: -45px; 
+    font-size: 2rem !important;
+}
+
+.owl-next {
+    font-size: 2rem !important;
+    right: -45px; 
+}
+
 
 .btn-list {
     font-size: 1.5rem;
@@ -152,7 +173,7 @@ body {
     border: 1px solid #D6D6D6;
 }
 
-.modal .btn-noticeme {
+.modal .btn-noticeme.noticeme2 {
     width: 100%;
     display: block;
     background-color: #000005;
@@ -1183,5 +1204,14 @@ body {
     }
     .current-price{
         font-size: 1.1rem;
+    }
+    .owl-prev {
+        left: -10px; 
+        font-size: 1rem !important;
+    }
+    
+    .owl-next {
+        font-size: 1rem !important;
+        right: -10px; 
     }
 }
