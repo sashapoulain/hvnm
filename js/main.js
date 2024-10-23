@@ -1,5 +1,3 @@
-
-
 $('.global-carousel').each(function () {
     $(this).owlCarousel({
         nav: eval($(this).data('nav')),
@@ -22,11 +20,14 @@ $('.global-carousel').each(function () {
             },
             400: {
                 items: $(this).data('slide-sm'),
-                stagePadding: 20,
+                margin: 15,
+                stagePadding: 10,
             },
+           
             600: {
-                items: $(this).data('slide-md'),
-                stagePadding: 20,
+                items: $(this).data('slide-sm'),
+                margin: 10,
+                stagePadding: 25,       
             },
             1000: {
                 items: $(this).data('slide')
@@ -59,21 +60,21 @@ $('.global-carousel').each(function () {
 //     }
 // });
 
-// $(document).ready(function () {
-//     $('.decrease').click(function () {
-//         let input = $(this).siblings('.quantity');
-//         let currentValue = parseInt(input.val());
-//         if (currentValue > 1) {
-//             input.val(currentValue - 1);
-//         }
-//     });
+$(document).ready(function () {
+    $('.decrease').click(function () {
+        let input = $(this).siblings('.quantity');
+        let currentValue = parseInt(input.val());
+        if (currentValue > 1) {
+            input.val(currentValue - 1);
+        }
+    });
 
-//     $('.increase').click(function () {
-//         let input = $(this).siblings('.quantity');
-//         let currentValue = parseInt(input.val());
-//         input.val(currentValue + 1);
-//     });
-// });
+    $('.increase').click(function () {
+        let input = $(this).siblings('.quantity');
+        let currentValue = parseInt(input.val());
+        input.val(currentValue + 1);
+    });
+});
 
 // const checkboxes = document.querySelectorAll('.form-check-input');
 // const totalPriceElement = document.getElementById('totalPrice');
@@ -141,9 +142,9 @@ $('.global-carousel').each(function () {
 // });
 document.addEventListener('DOMContentLoaded', () => {
     const basePriceElement = document.getElementById('totalPrice');
-    
+
     if (!basePriceElement) {
-        return; 
+        return;
     }
 
     let basePrice = parseFloat(basePriceElement.innerText.replace('₺ ', '').replace('.', '').replace(',', '.'));
@@ -165,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const animatePriceChange = (newPrice) => {
-        const duration = 1000; 
+        const duration = 4000;
         const startPrice = parseFloat(totalPriceElement.innerText.replace('₺ ', '').replace('.', '').replace(',', '.'));
         const endPrice = newPrice;
         const startTime = performance.now();
@@ -175,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const progress = Math.min(elapsed / duration, 1);
 
             const currentPrice = startPrice + (endPrice - startPrice) * progress;
-            totalPriceElement.innerText = currentPrice.toFixed(2).replace('.', ','); 
+            totalPriceElement.innerText = currentPrice.toFixed(2).replace('.', ',');
 
             if (progress < 1) {
                 requestAnimationFrame(animate);

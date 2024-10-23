@@ -20,6 +20,24 @@ body {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+#noticeModal .modal-dialog-centered{
+    justify-content: center;
+}
+#noticeModal .modal-dialog-centered .modal-footer{
+    margin: 10px;
+}
+#noticeModal .modal-content {
+    width: 95%;
+    padding: 5px;
+}
+#noticeModal .btn-close{
+    background: none;
+    opacity: 1;
+    padding: 0 5px !important;
+}
+#noticeModal .modal-header{
+    align-items: start;
+}
 .price {
     transition: all 0.5s ease;
     margin-top: 4.5rem;
@@ -840,7 +858,7 @@ body {
 
 .product-detail-content .form-check .form-check-input {
     border-radius: 2px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .product-detail-content .form-check-input:focus {
@@ -949,13 +967,11 @@ body {
 .footer .card .card-body h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    text-transform: capitalize;
 }
 
 .footer .card .card-body h5 {
     font-size: 1rem;
     font-weight: 400;
-    text-transform: capitalize;
 }
 
 .copy {
@@ -1172,10 +1188,10 @@ body {
         font-size: 0.8rem;
     }
     .modal-title {
-        font-size: 1rem;
-        text-align: left;
+        font-size: 11px;
+        text-align: center;
         font-weight: 500;
-        padding: 0 8px;
+        padding: 0 0px;
         margin-bottom: 1rem;
     }
     .offcanvas-body .offcanvas-menu .list li a {
@@ -1228,4 +1244,16 @@ body {
         font-size: 1rem !important;
         right: -10px; 
     }
+    .modal-footer{margin-top: 12px;}
+    .modal span{font-size: 10px;}
+    .modal .dead-heart{
+        position: relative;
+        width: 210px;
+        display: flex;
+        margin: auto;
+    }
+    .modal label, .modal p{font-size: 12px;
+    margin-bottom: 3px;}
+    .modal p{margin-top: 5px;}
+    .secure{width: 35px;}
 }
