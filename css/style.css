@@ -712,6 +712,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding-left: 25px;
 }
 
 .my-basket .quantity-container .form-control {
@@ -1138,6 +1139,7 @@ body {
 
     .my-basket .quantity-container {
         margin-bottom: 2rem;
+        padding-left: 0;
     }
 
     .my-basket .basket-product .card-title {
