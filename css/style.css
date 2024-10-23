@@ -658,11 +658,12 @@ body {
 }
 
 .my-basket h3 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.25rem;
+    font-weight: 800;
     text-align: left;
     text-transform: uppercase;
     padding-left: 1rem;
+
 }
 
 .my-basket .card {
@@ -671,6 +672,7 @@ body {
 
 .my-basket h3 img {
     width: 40px;
+    padding-bottom: 5px;
 }
 
 .basket-product {
@@ -710,6 +712,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding-left: 25px;
 }
 
 .my-basket .quantity-container .form-control {
@@ -1000,6 +1003,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 5px;
     }
 
 
